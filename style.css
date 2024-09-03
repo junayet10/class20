@@ -1,0 +1,100 @@
+/*CSS COMMON*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*CSS COMMON*/
+
+.plus{
+    background-color: cadetblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus button{
+    padding: 10px 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.plus input{
+    padding: 10px 10px;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+}
+nav{
+    padding: 40px 0;
+}
+nav span{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+aside{
+    height: 100vh;
+    position: fixed;
+   top: 0;
+   width: 100%;
+    background-color: rgba(68, 61, 61, 0.408);
+    transform: translateX(-100%);
+    transition: 0.7s cubic-bezier(.17,.67,.83,.67);
+}
+aside.active{
+    transform: translateX(0%);
+}
+aside .cross{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #000;
+    position: absolute;
+    right:30px ;
+    top: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.8s;
+    border-radius: 50%;
+}
+
+aside .cross:hover{
+    transform: rotate(180deg);
+    background-color: #fff;
+    color: black;
+}
+aside ul{
+    max-width: 300px;
+    width: 80%;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+    background-color: #FAF0F0;
+}
+aside ul li a{
+    display: inline-block;
+    padding: 24px 0;
+    color: black;
+    font-size: 18px;
+    font-family: monospace;
+}
